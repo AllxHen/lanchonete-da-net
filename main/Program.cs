@@ -10,6 +10,8 @@ namespace ProjetoLanchonete
             //junto com uma explicação de como o código funciona e como executar o projeto. Como amanhã não vou conseguir ir, 
             //quero deixar minha parte organizada para vocês conseguirem testar e apresentar. Se encontrarem algum erro na integração, 
             //me avisem para eu verificar o que consigo ajustar hoje, estarei no teams.
+
+            //Coloquem os metodos la em baixo!
             
             int opcao = 0; // irei adicionar um readline conforme o metodo for executar para a escolha das opçoes, para no futuro integrar com um switch case
 
@@ -89,34 +91,20 @@ namespace ProjetoLanchonete
                     default:
                         Console.Write("Opção invalida! :(");
                         break;
-                    }
-                case 4:
-                    
+                    }                    
                 }
                 
-            } while (opcao != 6);
-                
-              
+            } while (opcao != 3);
 
-            
-
-
-
-
-
-
-
-
+            //Aqui em baixo vcs colocam todos os metodos pra manter organizado e tudo certinho!
             
             static void mostrarMenu();
             {
                 Console.WriteLine("=========  *LANCHONETE SENAC* ==================");  // Mostrando as opções do Menu usando um Metodo para o menu, conforme o sistema for inciar!
                 Console.WriteLine("---------- OPÇÕES ----------");
                 Console.WriteLine("1 - Ver Cardapio ");
-                Console.WriteLine("2 - Registrar Venda");
-                Console.WriteLine("3 - Relatorio do Produto");
-                Console.WriteLine("4 - Relatorio por Dia");
-                Console.WriteLine("5 - Resumo da Semana");
+                Console.WriteLine("2 - Ver Vendas");
+                Console.WriteLine("3 - Ver Resumo e faturamento");
                 Console.WriteLine("6 - Sair");
             }
 
