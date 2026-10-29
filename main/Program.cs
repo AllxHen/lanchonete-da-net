@@ -6,6 +6,7 @@ namespace ProjetoLanchonete
     {
         public static void Main(string[] args) 
         {
+            //Parte do Allex
             //Pessoal, vou terminar minha parte da Main e da integração hoje e mandar tudo para vocês, 
             //junto com uma explicação de como o código funciona e como executar o projeto. Como amanhã não vou conseguir ir, 
             //quero deixar minha parte organizada para vocês conseguirem testar e apresentar. Se encontrarem algum erro na integração, 
@@ -14,8 +15,9 @@ namespace ProjetoLanchonete
             //Coloquem os metodos la em baixo!
             
             int opcao = 0; // irei adicionar um readline conforme o metodo for executar para a escolha das opçoes, para no futuro integrar com um switch case
+            int subopcao = 0; // Uma opção para os segundos switch para nao dar conflito
 
-            do
+            do //mantem o menu principal em execuçao, repetindo as opçoes ate o usuario escolher 0 para sair
             {
                 mostrarMenu();
                 opcao = int.Parse(Console.ReadLine()); 
@@ -28,12 +30,12 @@ namespace ProjetoLanchonete
                 case 1:
                     Console.WriteLine("1 - MostrarCardapio");
                     Console.WriteLine("2 - CodigoValido");
-                    opcao = int.Parse(Console.ReadLine());
+                    subopcao = int.Parse(Console.ReadLine());
 
-                    switch (opcao)
+                    switch (subopcao) //aqui criei mais um switch case pra opcao dentro delas
                     {
                     case 1:
-                        MostrarCardapio();
+                        MostrarCardapio(); // executando os metodos
                         break;
                     case 2:
                         CodigoValido();
@@ -48,9 +50,9 @@ namespace ProjetoLanchonete
                     Console.WriteLine("1 - Registrar Venda");
                     Console.WriteLine("2 - Total Produto");
                     Console.WriteLine("3 - Total Dia");
-                    opcao = int.Parse(Console.ReadLine());
+                    subopcao = int.Parse(Console.ReadLine());
 
-                    switch (opcao)
+                    switch (subopcao)
                     {
                     case 1:
                         RegistrarVenda();
@@ -72,9 +74,9 @@ namespace ProjetoLanchonete
                     Console.WriteLine("2 - Faturamento Semana");
                     Console.WriteLine("3 - Produto Campeao");
                     Console.WriteLine("4 - Dia Mais Movimentado");
-                    opcao = int.Parse(Console.ReadLine());
+                    subopcao = int.Parse(Console.ReadLine());
 
-                    switch (opcao)
+                    switch (subopcao)
                     {
                     case 1:
                         FaturamentoProduto();
@@ -91,13 +93,22 @@ namespace ProjetoLanchonete
                     default:
                         Console.Write("Opção invalida! :(");
                         break;
-                    }                    
+                    }
+                    break;
+                    
+                case 0:
+                    Console.WriteLine("Saindo do sistema!");
+                    break;
+                    
+                default:
+                    Console.WriteLine("Opcao indisponivel!");
+                    break;
                 }
                 
-            } while (opcao != 4);
+            } while (opcao != 0); // aqui o while enquanto ele for diferente de zero ele ainda vai continuar executando ate vc colocar 0 pra parar esse loop
 
-            //Aqui em baixo vcs colocam todos os metodos pra manter organizado e tudo certinho!
-            
+        }
+             //AVISOOOOO! Aqui em baixo vcs colocam todos os metodos pra manter organizado e tudo certinho!
             static void mostrarMenu()
             {
                 Console.WriteLine("=========  *LANCHONETE SENAC* ==================");  // Mostrando as opções do Menu usando um Metodo para o menu, conforme o sistema for inciar!
@@ -107,8 +118,42 @@ namespace ProjetoLanchonete
                 Console.WriteLine("3 - Ver Resumo e faturamento");
                 Console.WriteLine("0 - Sair");
             }
-
             
+            // irei deixar ja no gatilho pra vcs terem ideia de como colocar
+
+            static void MostrarCardapio(){
+                
+            }
+
+            static void CodigoValido(){
+                
+            }
+
+            static void RegistrarVenda(){
+                
+            }
+
+            static void TotalProduto(){
+                
+            }
+
+            static void TotalDia(){
+                
+            }
+
+            static void FaturamentoProduto(){
+                
+            }
+
+            static void FaturamentoSemana(){
+                
+            }
+
+            static void ProdutoCampeao(){
+                
+            }
+
+            static void DiaMaisMovimentado(){
         }
     }
 }
