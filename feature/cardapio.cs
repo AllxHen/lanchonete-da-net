@@ -27,6 +27,20 @@ namespace ProjetoLanchonetesenac
     Console.WriteLine("3. Suco | R$ 6,00");
     Console.WriteLine("4. Café | R$ 4,00");
     Console.WriteLine("5. Bolo | R$ 5,30 ");
+
+      
+      double[] precos = { 7.0, 5.0, 6.0, 4.0, 8.0 };
+string[] dias = { "Seg", "Ter", "Qua", "Qui", "Sex" };
+
+
+static bool CodigoValido( int codigo, int tamanho)
+{
+  return codigo >= 0 && codigo <= tamanho;
+
+    Console.ReadLine();
+
+
+}
   
 
 
