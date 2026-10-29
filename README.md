@@ -55,8 +55,6 @@ O objetivo é desenvolver um sistema de console para organizar as operações de
 
 Projeto acadêmico desenvolvido em grupo no SENAC.
 
-**Responsabilidade de Allex:** desenvolvimento do menu principal e integração das funcionalidades.
-
 ## 📈 Status do projeto
 
 Em desenvolvimento — as funcionalidades estão sendo implementadas e integradas pela equipe.
