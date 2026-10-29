@@ -71,7 +71,7 @@ namespace ProjetoLanchonete
                     Console.WriteLine("1 - Faturamento Produto");
                     Console.WriteLine("2 - Faturamento Semana");
                     Console.WriteLine("3 - Produto Campeao");
-                    Console.WriteLIne("4 - Dia Mais Movimentado")
+                    Console.WriteLIne("4 - Dia Mais Movimentado");
                     opcao = int.Parse(Console.ReadLine());
 
                     switch (opcao)
@@ -94,18 +94,18 @@ namespace ProjetoLanchonete
                     }                    
                 }
                 
-            } while (opcao != 3);
+            } while (opcao != 4);
 
             //Aqui em baixo vcs colocam todos os metodos pra manter organizado e tudo certinho!
             
-            static void mostrarMenu();
+            static void mostrarMenu()
             {
                 Console.WriteLine("=========  *LANCHONETE SENAC* ==================");  // Mostrando as opções do Menu usando um Metodo para o menu, conforme o sistema for inciar!
                 Console.WriteLine("---------- OPÇÕES ----------");
                 Console.WriteLine("1 - Ver Cardapio ");
                 Console.WriteLine("2 - Ver Vendas");
                 Console.WriteLine("3 - Ver Resumo e faturamento");
-                Console.WriteLine("6 - Sair");
+                Console.WriteLine("4 - Sair");
             }
 
             
