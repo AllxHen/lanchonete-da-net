@@ -1,73 +1,50 @@
 using System;
 
-namespace ProjetoLanchonete
+namespace ProjetoLanchonete 
 {
-    public class ProjetoLanchonete
+    public class ProjetoLanchonete 
     {
-        public static void Main(string[] args)
+        public static void Main(string[] args) 
         {
+            //Pessoal, vou terminar minha parte da Main e da integração hoje e mandar tudo para vocês, 
+            //junto com uma explicação de como o código funciona e como executar o projeto. Como amanhã não vou conseguir ir, 
+            //quero deixar minha parte organizada para vocês conseguirem testar e apresentar. Se encontrarem algum erro na integração, 
+            //me avisem para eu verificar o que consigo ajustar hoje, estarei no teams.
+            
+            int opcao = int.Parse(Console.Readline()); // irei adicionar um readline conforme o metodo for executar para a escolha das opçoes, para no futuro integrar com um switch case
+
+            do
+            mostrarMenu();
+            opcao = int.Parse(Console.Readline()); 
+            // iniciando a interface do menu usando um metodo que esta a baixo!
+            // irei usar o switch pra fazer as escolha das opçoes do menu mostrando varios caso diferentes, tipo se o cara digitar 1 ele vai ver o cardapio e outras coisas relacionadas a ele.
+            // alem que terei que usar switch case dentro deles msm pra poder fazer um menu mais dinamico e organizado 
+                
+              
+
+            
+
+
+
+
+
+
+
+
+            
+            static void mostrarMenu();
             {
-                static void MostrarMenu()
-                {
-                    Console.WriteLine("=========  *LANCHONETE SENAC* ==================");  // LINHA 8 A LINHA 16 OPÇOES DO CARDAPIO 
-                    Console.WriteLine("========= OPÇÕES ==============");
-                    Console.WriteLine("1- VER CARDÁPIO ");
-                    Console.WriteLine("2 - REGISTRAR VENDA");
-                    Console.WriteLine("3 - RELATÓRIO DO PRODUTO");
-                    Console.WriteLine("4-  RELATÓRIO POR DIA ");
-                    Console.WriteLine("5- RESUMO DA SEMANA");
-                    Console.WriteLine("0 - SAIR ");
-                    Console.WriteLine("OPÇÃO:");
-                }
-
-                static void MostrarCardapio()
-                {
-                    Console.WriteLine("=========  *CARDÁPIO* ==================");  // LINHA 8 A LINHA 16 OPÇOES DO CARDAPIO 
-                    Console.WriteLine("1. Coxinha | R$ 7,00");
-                    Console.WriteLine("2. Pão de queijo | R$ 5,00");
-                    Console.WriteLine("3. Suco | R$ 6,00");
-                    Console.WriteLine("4. Café | R$ 4,00");
-                    Console.WriteLine("5. Bolo | R$ 8,00 ");
-                }
-
-
-                MostrarMenu();
-                int opcao = int.Parse(Console.ReadLine());
-
-                switch (opcao)
-                {
-                    case 1:
-                        MostrarCardapio();
-                        break;
-                    case 2:
-                        CodigoValido();
-                        break;
-                    case 3:
-                        RegistrarVenda();
-                        break;
-                    case 4:
-                        TotalProduto();
-                        break;
-                    case 5:
-                        TotalDia();
-                        break;
-                    case 6:
-                        FaturamentoProduto();
-                        break;
-                    case 7:
-                        FaturamentoSemana();
-                        break;
-                    case 8:
-                        ProdutoCampeao();
-                        break;
-                    case 9:
-                        DiaMaisMovimentado();
-                        break;
-                    default:
-                        break;
-
-                }
+                Console.WriteLine("=========  *LANCHONETE SENAC* ==================");  // Mostrando as opções do Menu usando um Metodo para o menu, conforme o sistema for inciar!
+                Console.WriteLine("---------- OPÇÕES ----------");
+                Console.WriteLine("1 - Ver Cardapio ");
+                Console.WriteLine("2 - Registrar Venda");
+                Console.WriteLine("3 - Relatorio do Produto");
+                Console.WriteLine("4 - Relatorio por Dia");
+                Console.WriteLine("5 - Resumo da Semana");
+                Console.WriteLine("6 - Sair");
             }
+
+            
         }
     }
 }
