@@ -18,7 +18,7 @@ namespace ProjetoLanchonete
             do
             {
                 mostrarMenu();
-                opcao = int.Parse(Console.Readline()); 
+                opcao = int.Parse(Console.ReadLine()); 
                 // iniciando a interface do menu usando um metodo que esta a baixo!
                 // irei usar o switch pra fazer as escolha das opçoes do menu mostrando varios caso diferentes, tipo se o cara digitar 1 ele vai ver o cardapio e outras coisas relacionadas a ele.
                 // alem que terei que usar switch case dentro deles msm pra poder fazer um menu mais dinamico e organizado 
@@ -33,7 +33,7 @@ namespace ProjetoLanchonete
                     switch (opcao)
                     {
                     case 1:
-                        mostrarMenu();
+                        MostrarCardapio();
                         break;
                     case 2:
                         CodigoValido();
@@ -71,7 +71,7 @@ namespace ProjetoLanchonete
                     Console.WriteLine("1 - Faturamento Produto");
                     Console.WriteLine("2 - Faturamento Semana");
                     Console.WriteLine("3 - Produto Campeao");
-                    Console.WriteLIne("4 - Dia Mais Movimentado");
+                    Console.WriteLine("4 - Dia Mais Movimentado");
                     opcao = int.Parse(Console.ReadLine());
 
                     switch (opcao)
@@ -105,7 +105,7 @@ namespace ProjetoLanchonete
                 Console.WriteLine("1 - Ver Cardapio ");
                 Console.WriteLine("2 - Ver Vendas");
                 Console.WriteLine("3 - Ver Resumo e faturamento");
-                Console.WriteLine("4 - Sair");
+                Console.WriteLine("0 - Sair");
             }
 
             
