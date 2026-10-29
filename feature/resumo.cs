@@ -14,3 +14,16 @@ public class RelatorioVendas
             return totalUnidades * precos[produto];
     }
 }
+    //A soma o Faturamento de todos.
+    static double FaturamentoSemanal(int[,] vendas, double[,] precos)
+    {
+        double totalUnidades = 0;
+
+        
+        // Percorre cada linha (Produto) na matriz.
+        for (int produto1 = 0; produto1< vendas.GetLength(0); produto1++)
+        {
+            FaturamentoSemanal += FaturamentoProduto[vendas, precos, produto1];
+        }
+        return FaturamentoSemanal;
+    }
