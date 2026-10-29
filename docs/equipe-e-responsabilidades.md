@@ -1,20 +1,20 @@
 **Divisão dos métodos — Projeto Lanchonete Senac**
 
-**Integrante 1 — Cardápio** //lorrany neres
+**Integrante 1 — Cardápio** -- lorrany neres
 - MostrarMenu
 - MostrarCardapio
 - CodigoValido
 
 Responsável por exibir o menu, mostrar os produtos e preços e validar os códigos informados.
 
-**Integrante 2 — Vendas** //geovanna reis
+**Integrante 2 — Vendas** -- geovanna reis
 - RegistrarVenda
 - TotalProduto
 - TotalDia
 
 Responsável por registrar as vendas e calcular a quantidade total vendida por produto e por dia.
 
-**Integrante 3 — Resumo e faturamento** //gustavo shimada
+**Integrante 3 — Resumo e faturamento** -- gustavo shimada
 - FaturamentoProduto
 - FaturamentoSemana
 - ProdutoCampeao
@@ -22,7 +22,7 @@ Responsável por registrar as vendas e calcular a quantidade total vendida por p
 
 Responsável por calcular o faturamento dos produtos e da semana, identificar o produto mais vendido e o dia mais movimentado.
 
-**Integrante 4 — Integração (Main)** //Allex henrique
+**Integrante 4 — Integração (Main)** -- Allex henrique
 - Criar o fluxo principal do programa.
 - Inicializar os vetores e a matriz de vendas.
 - Organizar o menu usando DO-WHILE e SWITCH.
