@@ -16,6 +16,9 @@ namespace ProjetoLanchonetesenac
             Console.WriteLine("5- RESUMO DA SEMANA");
             Console.WriteLine("0 - SAIR ");
             Console.WriteLine("OPÇÃO:");
+              
+            Console.WriteLine("Digite uma opção:");
+            string opcao= Console.ReadLine();
         }
     }
 }
@@ -28,6 +31,9 @@ namespace ProjetoLanchonetesenac
     Console.WriteLine("4. Café | R$ 4,00");
     Console.WriteLine("5. Bolo | R$ 8,00 ");
 
+      Console.WriteLine(" Digite uma opção:");
+      string opcao = Console.ReadLine();
+
       
       double[] precos = { 7.0, 5.0, 6.0, 4.0, 8.0 }; // CRIANDO VETOR DE PREÇOS E DIAS 
 string[] dias = { "Seg", "Ter", "Qua", "Qui", "Sex" };
@@ -38,6 +44,8 @@ static bool CodigoValido( int codigo, int tamanho)   //ADICIONANDO UM MÉTODO
   return codigo >= 0 && codigo <= tamanho;
 
     Console.ReadLine();
+    
+    CodigoValido(2,produtos.Length);
 
 
 }
